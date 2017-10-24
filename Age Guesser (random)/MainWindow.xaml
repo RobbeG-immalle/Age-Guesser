@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="mijnLabel" Content="Computer guesses that your age is:" HorizontalAlignment="Left" Height="30" Margin="153,75,0,0" VerticalAlignment="Top" Width="212">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label x:Name="ageLabel" Content="" HorizontalAlignment="Left" Height="66" Margin="243,110,0,0" VerticalAlignment="Top" Width="96"/>
+        <Button x:Name="correctButton" Content="Correct" HorizontalAlignment="Left" Height="40" Margin="101,176,0,0" VerticalAlignment="Top" Width="104" Click="correctButton_Click"/>
+        <Button x:Name="wrongButton" Content="Wrong" HorizontalAlignment="Left" Height="40" Margin="301,176,0,0" VerticalAlignment="Top" Width="109" Click="wrongButton_Click"/>
+
     </Grid>
 </Window>
